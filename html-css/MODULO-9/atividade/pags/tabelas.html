@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(../images/teclado\ foto2.png);
+            background-size: 100%;
+        }
+        section {
+				background-color: rgba(97, 96, 96, 0.9);;
+	    }
+        article {
+			  float: left;
+			  padding: 20px;
+			  width: 50%;
+		}
+        nav {
+			  float: left;
+			  width: 30%;
+			  padding: 20px;
+        }
+
+        nav ul {
+			  list-style-type: none;
+			  padding: 0 20px;
+              color: white;
+              font-size: larger;
+			  width: 180px;
+
+		}
+
+        li a {
+			display: block;
+			padding: 8px 16px;
+			text-decoration: none;
+		}
+		li a:hover {
+			background-color: rgba(0, 0, 0, 0.3);
+			color: white;
+		}
+        a {
+            color: black;
+        }
+        table {
+            background-color: rgba(248,248,255, 0.6);
+            margin: auto;
+        }
+        
+        table, .info {
+            border: 1px solid rgba(0,0,0,0.2);
+            border-collapse: collapse;
+        }
+
+        .info {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: large;
+            padding: 5px 10px;
+            background-color: rgba(173,216,230, 0.4);
+        }
+
+        .fundo {
+            background-color: rgba(211,211,211, 0.3);
+        }
+        td {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 5px 10px;
+            
+        }
+        #centro {
+            text-align: center;
+        }
+        .total2 {
+            font-size: 13px;
+            text-align: left;
+            padding: 5px 10px;
+        }
+        
+        h3 {
+            color: black;
+            text-align: center;
+            margin-top: 50px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif  
+        }
+        header {
+			background-color: rgba(97, 96, 96, 0.9);
+			padding: 20px;
+			text-align: center;
+			font-size: 35px;
+			color: white;
+        }
+        .produto {
+            text-align: left;
+        }
+        footer {
+			background-color: rgba(97, 96, 96, 0.9);
+			padding: 10px;
+			text-align: center;
+			color: white;
+		}
+        section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+		}
+        @media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+		}
+    </style>
+    <title>Tabelas</title>
+</head>
+<body>
+    <header>
+        <h2>T A B E L A S</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <h2>CONTEÚDOS</h2><br><br>
+                <li><a href="../breakpoint.html">Home</a></li><br>
+                <li><a href="layout.html">Layout</a></li><br>
+                <li><a href="formulario.html">Formulário</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h3>Tabela simples com CSS</h3>
+            <table>
+                <Tr>
+                    <th class="info">Produto</th>
+                    <th class="info">1º Trimestre</th>
+                    <th class="info">2º Trimestre</th>
+                    <th class="info">3º Trismetre</th>
+                    <th class="info">4º Trimestre</th>
+                </Tr>
+
+                <tr id="centro">
+                    <td class="produto">Tenis</td>
+                    <td>430</td>
+                    <td>480</td>
+                    <td>410</td>
+                    <td>515</td>
+                </tr>
+                <tr class="fundo" id="centro">
+                    <td class="produto">Calças</td>
+                    <td>790</td>
+                    <td>810</td>
+                    <td>730</td>
+                    <td>880</td>
+                </tr>
+                <tr id="centro">
+                    <td class="produto">Bonés</td>
+                    <td>390</td>
+                    <td>600</td>
+                    <td>450</td>
+                    <td>690</td>
+                </tr>
+                <tr class="fundo" id="centro">
+                    <td class="produto">Jaquetas</td>
+                    <td>300</td>
+                    <td>290</td>
+                    <td>410</td>
+                    <td>360</td>
+                </tr>
+                <tr class="total">
+                    <th class="total2">TOTAL</th>
+                    <th>999</th>
+                    <th>999</th>
+                    <th>999</th>
+                    <th>999</th>
+                </tr>
+            </table>
+            <h3>Tabela com o Colspan e CSS</h3>
+            <table>
+                <tr>
+                    <th class="info">Ano</th>
+                    <th colspan="2" class="info">1º Trimestre</th>
+                    <th colspan="2" class="info">2º Trimestre</th>
+                    <th colspan="2" class="info">3º Trimestre</th>
+                    <th colspan="2" class="info">4º Trimestre</th>
+                </tr>
+                <tr id="centro">
+                    <td class="produto">Produtos</td>
+                    <td>Atual</td>
+                    <td>Meta</td>
+                    <td>Atual</td>
+                    <td>Meta</td>
+                    <td>Atual</td>
+                    <td>Meta</td>
+                    <td>Atual</td>
+                    <td>Meta</td>
+                </tr>
+                <tr class="fundo" id="centro">
+                    <td class="produto">Tenis</td>
+                    <td>500</td>
+                    <td>580</td>
+                    <td>780</td>
+                    <td>750</td>
+                    <td>650</td>
+                    <td>520</td>
+                    <td>650</td>
+                    <td>600</td>
+                </tr>
+                <tr class="centro" id="centro">
+                    <td class="produto">Calças</td>
+                    <td>870</td>
+                    <td>750</td>
+                    <td>560</td>
+                    <td>700</td>
+                    <td>630</td>
+                    <td>650</td>
+                    <td>750</td>
+                    <td>650</td>
+                </tr>
+                <tr class="fundo" id="centro">
+                    <td class="produto">Bonés</td>
+                    <td>450</td>
+                    <td>360</td>
+                    <td>500</td>
+                    <td>510</td>
+                    <td>600</td>
+                    <td>500</td>
+                    <td>650</td>
+                    <td>600</td>
+                </tr>
+                <tr id="centro">
+                    <td class="produto">Jaquetas</td>
+                    <td>520</td>
+                    <td>500</td>
+                    <td>490</td>
+                    <td>550</td>
+                    <td>600</td>
+                    <td>520</td>
+                    <td>760</td>
+                    <td>610</td>
+                </tr>
+                <tr class="fundo" id="centro">
+                    <th class="total2">TOTAL</th>
+                    <th>2.340</th>
+                    <th>2.190</th>
+                    <th>2.330</th>
+                    <th>2.510</th>
+                    <th>2.480</th>
+                    <th>2.190</th>
+                    <th>2.810</th>
+                    <th>2.460</th>
+                </tr>
+            </table>
+        </article>
+    </section>
+    <footer>
+        <p>Desenvolvido por Rafael Milanez</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Home</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+              background-image: url(./images/teclado\ foto2.png);
+              background-size: 100%;
+			}
+			section {
+				background-color: rgba(97, 96, 96, 0.9);
+			}
+            img {
+                border: 5px solid rgba(0, 0, 0, 0.3);
+                width: 50%;
+                border-radius: 50%;
+                margin-left: 10%;
+
+            }
+            a {
+                color: black;
+            }
+            .rlm {
+                color: white;
+                font-size: 25px;
+            }
+
+			/* Style the header */
+			header {
+				background-color: rgba(97, 96, 96, 0.9);
+				padding: 20px;
+				text-align: center;
+				font-size: 35px;
+				color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  	float: left;
+			  	width: 30%;
+			  	padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0 20px;
+              color: white;
+              font-size: larger;
+			  width: 180px;
+			}
+
+			li a {
+				display: block;
+				padding: 8px 16px;
+				text-decoration: none;
+			}
+			li a:hover {
+				background-color: rgba(0, 0, 0, 0.3);
+				color: white;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			}
+			iframe {
+				width: 100%;
+				height: 600px;
+			}
+
+			/* mobile first */
+			@media (max-widht: 425px){
+				
+				nav {
+					width: 10%;
+				}
+				section {
+					width: 100%;
+				}
+				.article {
+					width: 100%;
+					min-width: 320px;
+				}
+			}
+
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: rgba(97, 96, 96, 0.9);
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+		
+			</style>
+	</head>
+	<body>
+
+		<header>
+			<h2>F R O N T - E N D</h2>
+		</header>
+
+		<section>
+
+			<nav>
+				<ul>
+                    <h2>CONTEÚDOS</h2><br><br>
+					<li><a href="tabelas.html">Tabelas</a></li><br>
+					<li><a href="layout.html">Layout</a></li><br>
+					<li><a href="formulario.html">Formulário</a></li>
+				</ul>
+			</nav>
+
+			<article>
+                <img src="./images/proplayerhaha.JPG" alt="Rafael Milanez">
+
+				<h1 class="rlm">Rafael Lopes Milanez</h1>
+
+				<p>Aluno do curso de Desenvolvimento Front-End pela <strong>EBAC</strong> desde Abril de 2022.</p>
+
+				<div class= "iframe">
+					<iframe width="100%" height="300px" src="https://www.youtube.com/embed/CXLM08fZO5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+
+				<p>Sou formado em Nutrição pela Universidade Positivo em Curitiba-PR mas sempre gostei da área de tecnologia e desenvolvimento (principalmente web), por isso estou mudando de área e indo fazer o que sempre tive vontade.</p>
+				<p>Ao lado esquerdo você tem acesso a algumas das experiências que adquiri através dos conteúdos presentes no curso.</p>
+
+				<div class="iframe">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28839.332592506693!2d-49.08613628262377!3d-25.374112338567045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcece5695f6a1b%3A0x18a7807803b78c6d!2sQuatro%20Barras%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1658795849930!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</article>
+
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Rafael Milanez</p>
+		</footer>
+		
+	</body>
+</html>

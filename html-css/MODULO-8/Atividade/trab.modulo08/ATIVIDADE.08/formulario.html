@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Formulário</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			body {
+			  	font-family: Arial, Helvetica, sans-serif;
+              	background-image: url(./images/teclado\ foto2.png);
+              	background-size: 100%;
+			}
+			header {
+				background-color: rgba(97, 96, 96, 0.9);
+				padding: 20px;
+				text-align: center;
+				font-size: 35px;
+				color: white;
+			}
+			section {
+				background-color: rgba(97, 96, 96, 0.9);;
+			}
+			nav {
+			  	float: left;
+			  	width: 30%;
+			  	padding: 20px;
+			}
+			nav ul {
+			  list-style-type: none;
+			  padding: 0 20px;
+              color: white;
+              font-size: larger;
+			  width: 180px;
+			}
+			a {
+                color: black;
+            }
+			li a {
+				display: block;
+				padding: 8px 16px;
+				text-decoration: none;
+			}
+			li a:hover {
+				background-color: rgba(0, 0, 0, 0.3);
+				color: white;
+			}
+			label {
+				padding: 2px;
+				margin-top: 5px;
+				font-family: helvetica, sans-serif;
+				font-size: 20px;
+				color: #ffffff;
+			}
+
+			input {
+				border-style: solid;
+				border-width: 1px;
+				border-color: #3A3B3C;
+				border-radius: 4px;
+			}
+
+
+			form {
+				background-color: rgba(0, 0, 0, 0.5);
+				text-align: center;
+				margin-right: 500px;
+				margin-left: 500px;
+				border-style: solid;
+				border-width: 2px;
+				border-radius: 50px;
+				border-color: #A020F0;
+				padding: 10px;
+			}
+			:placeholder-shown {
+				height: 25px;
+			}
+
+			.botao {
+				font-size: 1,2em;
+				color: #FFFFFF;
+				background-color: #191970;
+				padding: 5px;
+				width: 90px;
+				border-color: #A020F0;
+			}
+
+			.obrigatorio {
+				font-size: 9px;
+				text-align: left;
+				color: white;
+			}
+
+			.escrita {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 15px;
+				color: rgba(255, 255, 255, 0.6);
+				padding: 5px;
+			}
+
+			.data {
+				color: rgba(0, 0, 0, 0.6);
+			}
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+			footer {
+			  background-color: rgba(97, 96, 96, 0.9);
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+		</style>
+		<!--NOME
+			SOBRENOME
+			APELIDO
+			DATA NASC
+			GÊNERO
+			EMAIL
+			ESTADO
+			CIDADE
+		-->
+	</head>
+	<body>
+		<header>
+			<h2>F O R M U L Á R I O</h2>
+		</header>
+		<section>
+			<nav>
+				<ul>
+                    <h2>CONTEÚDOS</h2><br><br>
+					<li><a href="homepage.html">Home</a></li><br>
+					<li><a href="tabelas.html">Tabelas</a></li><br>
+					<li><a href="layout.html">Layout</a></li>
+				</ul>
+			</nav>
+			<article>
+				
+				<div>
+					<form>
+							<div>
+								<label for="nome"><sup>*</sup>Nome</label><br><br>
+								<input type="text" name="nome" id="nome" placeholder="Escreva seu nome" required>
+							</div>
+							<br>
+							<div>
+								<label for="sobrenome"><sup>*</sup>Sobrenome</label><br><br>
+								<input type="text" name="sobrenome" id="sobrenome" placeholder="Escreva seu sobrenome" required>
+							</div>
+							<br>
+							<div>
+								<label for="apelido">Apelido</label><br><br>
+								<input type="text" name="apelido" id="apelido" placeholder="Escreva seu apelido">
+							</div>
+							<br>
+							<div>
+								<label for="data">Data de nascimento</label><br><br>
+								<input type="date" name="data" id="data" class="data">
+							</div>
+						
+							<br>
+							<div class="escrita">	
+								<label for="genero">Gênero:</label><br><br>
+								<input type="radio" name="genero" value="masculino" class="escrita">Masculino
+								<input type="radio" name="genero" value="feminino" class="escrita">Feminino
+							</div>
+							<br>
+							<div>
+								<label for="email">E-mail</label><br><br>
+								<input type="email" name="email" id="email" placeholder="Escreva seu email">
+							</div>
+							<br>
+							<div class="escrita">
+								<label for="linguagem">Qual sua linguagem preferida?</label><br><br>
+								<input type="radio" name="linguagem" value="html" class="escrita">Html
+								<input type="radio" name="linguagem" value="css" class="escrita">Css
+								<input type="radio" name="linguagem" value="javascript" class="escrita">JavaScript
+								<input type="radio" name="linguagem" value="python" class="escrita">React
+								<input type="radio" name="linguagem" value="vue" class="escrita">Vue
+							</div>
+							<br>
+							<div class="escrita">
+								<label for="experiencia">Quais delas você tem alguma experiência?</label><br><br>
+								<input type="checkbox" name="experiencia" value="html" class="escrita">Html
+								<input type="checkbox" name="experiencia" value="css" class="escrita">Css
+								<input type="checkbox" name="experiencia" value="javascript" class="escrita">JavaScript
+								<input type="checkbox" name="experiencia" value="react" class="escrita">React
+								<input type="checkbox" name="experiencia" value="vue" class="escrita">Vue
+							</div>
+							<br>
+							<div>
+								<label for="texto">Qual sua expectativa com o FRONT-END?</label><br><br>
+								<textarea name="texto" id="texto" rows="5" cols="33" placeholder="Escreva aqui.."></textarea>
+							</div>
+							<br>
+							<div>
+								<input type="submit" value="Enviar" class="botao">
+								<input type="reset" value="Redefinir" class="botao">
+								<input type="button" onclick="alert('VOCÊ CLICOU! >.<')" value="Não clique" class="botao">
+							</div>
+							<p class="obrigatorio">*campo obrigatório</p>
+					</form>
+				</div>
+			</article>
+		</section>	
+		<footer>
+			<p class="dev">Desenvolvido por Rafael Milanez</p>
+		</footer>
+	</body>
+</html>

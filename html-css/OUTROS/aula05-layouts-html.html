@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Modulo 03 Exercício</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style type="text/css">
+			<style>
+
+			* {
+
+			 box-sizing: border-box;
+
+			}
+
+
+			body {
+
+			 font-family: Arial, Helvetica, sans-serif;
+
+			}
+
+
+			/* Style the header */
+
+			header {
+
+			 background-color: #666;
+
+			 padding: 30px;
+
+			 text-align: center;
+
+			 font-size: 35px;
+
+			 color: white;
+
+			}
+
+
+			/* Create two columns/boxes that floats next to each other */
+
+			nav {
+
+			 float: left;
+
+			 width: 30%;
+
+			  
+
+			 background: #ccc;
+
+			 padding: 20px;
+
+			}
+
+
+			/* Style the list inside the menu */
+
+			nav ul {
+
+			 list-style-type: none;
+
+			 padding: 0;
+
+			}
+
+
+			article {
+
+			 float: left;
+
+			 padding: 20px;
+
+			 width: 70%;
+
+			 background-color: #f1f1f1;
+
+			}
+
+
+			/* Clear floats after the columns */
+
+			section::after {
+
+			 background: #ccc;
+
+			 content: "";
+
+			 display: table;
+
+			 clear: both;
+
+			}
+
+
+			/* Style the footer */
+
+			footer {
+
+			 background-color: #777;
+
+			 padding: 10px;
+
+			 text-align: center;
+
+			 color: white;
+
+			}
+
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+
+			@media (max-width: 600px) {
+
+			 nav, article {
+
+			  width: 100%;
+
+			  height: auto;
+
+			 }
+
+			}
+
+			</style>
+		</style>
+	</head>
+	<body>
+
+		<header>
+			<h2>Título da página</h2>
+		</header>
+
+		<section>
+			<nav>
+				<ul>
+					<li><a href="#inicio">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#contato">Contato</a></li>
+				</ul>
+			</nav>
+			<article>
+				<h1>Título Artigo</h1>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum, enim et congue malesuada, turpis odio interdum metus, quis sodales turpis massa in ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent lobortis maximus risus ut congue. Phasellus id accumsan lorem. Quisque id orci justo. Vestibulum consequat fermentum faucibus. Nam elementum lectus id nibh tristique efficitur. Aenean ut dolor elit. Mauris turpis eros, consequat vitae tempor nec, finibus sit amet nulla. Cras vel porttitor mi. Phasellus interdum posuere ipsum quis pellentesque. Aliquam erat volutpat. Praesent vel dignissim lorem, id malesuada lectus. In et ante in sem placerat dapibus. Nam eleifend, eros sed faucibus placerat, sem elit interdum lacus, et vulputate massa augue sed nulla.</p>
+
+				<p>Duis in metus in nunc accumsan sagittis eu euismod sem. Nunc fermentum dui justo. Mauris purus nibh, iaculis ut tincidunt vel, efficitur non neque. Nam consectetur porta placerat. Nunc nec rhoncus tortor. Suspendisse egestas eget augue quis tristique. Pellentesque malesuada augue sed mi porttitor, vel consectetur nisi interdum. Etiam euismod, erat a interdum suscipit, leo ex vestibulum mi, eget dignissim leo quam a risus.</p>
+
+				<p>raesent mauris augue, pharetra ac bibendum quis, pretium non ligula. In tortor massa, commodo ac congue eu, placerat non arcu. In consequat mauris vel risus auctor, at volutpat nibh dictum. Pellentesque ac interdum mi. Donec sodales, justo sit amet tincidunt accumsan, tellus nisl porttitor libero, eu rutrum mi metus vel leo. In ac odio nec magna condimentum pretium a quis neque. Fusce id fringilla mauris. Nunc viverra fringilla magna sit amet vulputate. Nam a vestibulum sapien. Ut pellentesque, erat a faucibus egestas, ipsum arcu egestas orci, eu condimentum risus diam porttitor nibh.</p>
+			</article>	
+		</section>
+		<footer>
+			<p>Desenvolvido por Rafael Milanez</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Listas e Links</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1>Listas e Links</h1>
+		
+		<h2>Lista não ordenada</h2>
+		<ul>
+			<li>Brasil</li>
+			<li>Argentina</li>
+			<li>Uruguai</li>
+			<li>Paraguai</li>
+		</ul>
+	</body>
+
+</html>

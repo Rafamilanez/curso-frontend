@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Home</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+              background-image: url(./images/teclado\ foto2.png);
+              background-size: 100%;
+			}
+			section {
+				background-color: rgba(97, 96, 96, 0.9);
+			}
+            img {
+                border: 5px solid rgba(0, 0, 0, 0.3);
+                width: 50%;
+                border-radius: 50%;
+                margin-left: 10%;
+
+            }
+            a {
+                color: black;
+            }
+            .rlm {
+                color: white;
+                font-size: 25px;
+            }
+
+			/* Style the header */
+			header {
+				background-color: rgba(97, 96, 96, 0.9);
+				padding: 20px;
+				text-align: center;
+				font-size: 35px;
+				color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  	float: left;
+			  	width: 30%;
+			  	padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0 20px;
+              color: white;
+              font-size: larger;
+			  width: 180px;
+			}
+
+			li a {
+				display: block;
+				padding: 8px 16px;
+				text-decoration: none;
+			}
+			li a:hover {
+				background-color: rgba(0, 0, 0, 0.3);
+				color: white;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: rgba(97, 96, 96, 0.9);
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+	</head>
+	<body>
+
+		<header>
+			<h2>F R O N T - E N D</h2>
+		</header>
+
+		<section>
+
+			<nav>
+				<ul>
+                    <h2>CONTEÚDOS</h2><br><br>
+					<li><a href="tabelas.html">Tabelas</a></li><br>
+					<li><a href="layout.html">Layout</a></li><br>
+					<li><a href="formulario.html">Formulário</a></li>
+				</ul>
+			</nav>
+
+			<article>
+                <img src="./images/proplayerhaha.JPG" alt="Rafael Milanez">
+
+				<h1 class="rlm">Rafael Lopes Milanez</h1>
+
+				<p>Aluno do curso de Desenvolvimento Front-End pela <strong>EBAC</strong> desde Abril de 2022.</p>
+
+				<p>Sou formado em Nutrição pela Universidade Positivo em Curitiba-PR mas sempre gostei da área de tecnologia e desenvolvimento (principalmente web), por isso estou mudando de área e indo fazer o que sempre tive vontade.</p>
+				<p>Ao lado esquerdo você tem acesso a algumas das experiências que adquiri através dos conteúdos presentes no curso.</p>
+			</article>
+
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Rafael Milanez</p>
+		</footer>
+		
+	</body>
+</html>

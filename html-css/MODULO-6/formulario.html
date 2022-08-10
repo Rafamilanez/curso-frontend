@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulário</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--NOME
+		SOBRENOME
+		APELIDO
+		DATA NASC
+		GÊNERO
+		EMAIL
+		ESTADO
+		CIDADE
+	-->
+</head>
+<body>
+	<header>
+		<h1>Curso Front-End</h1>
+	</header>
+	<article>
+		<h2>Cadastro</h2>
+		<p>Preencha os campos abaixo:</p>
+		<div>
+			<form>
+					<div>
+						<label for="nome"><sup>*</sup>Nome</label>
+						<input type="text" name="nome" id="nome" placeholder="Escreva seu nome" required>
+					</div>
+					<br>
+					<div>
+						<label for="sobrenome"><sup>*</sup>Sobrenome</label>
+						<input type="text" name="sobrenome" id="sobrenome" placeholder="Escreva seu sobrenome" required>
+					</div>
+					<br>
+					<div>
+						<label for="apelido">Apelido</label>
+						<input type="text" name="apelido" id="apelido" placeholder="Escreva seu apelido">
+					</div>
+					<br>
+					<div>
+						<label for="data">Data de nascimento</label>
+						<input type="date" name="data" id="data" class="data">
+					</div>
+				
+					<br>
+					<div class="escrita">	
+						<label>Gênero:</label>
+						<input type="radio" name="genero" value="masculino" class="escrita">Masculino
+						<input type="radio" name="genero" value="feminino" class="escrita">Feminino
+					</div>
+					<br>
+					<div>
+						<label for="email">E-mail</label>
+						<input type="email" name="email" id="email" placeholder="Escreva seu email">
+					</div>
+					<br>
+					<div class="escrita">
+						<label for="linguagem">Qual sua linguagem preferida?</label><br><br>
+						<input type="radio" name="linguagem" value="html" class="escrita">Html
+						<input type="radio" name="linguagem" value="css" class="escrita">Css
+						<input type="radio" name="linguagem" value="javascript" class="escrita">JavaScript
+						<input type="radio" name="linguagem" value="python" class="escrita">React
+						<input type="radio" name="linguagem" value="vue" class="escrita">Vue
+					</div>
+					<br>
+					<div class="escrita">
+						<label for="experiencia">Quais delas você tem alguma experiência?</label><br><br>
+						<input type="checkbox" name="experiencia" value="html" class="escrita">Html
+						<input type="checkbox" name="experiencia" value="css" class="escrita">Css
+						<input type="checkbox" name="experiencia" value="javascript" class="escrita">JavaScript
+						<input type="checkbox" name="experiencia" value="react" class="escrita">React
+						<input type="checkbox" name="experiencia" value="vue" class="escrita">Vue
+					</div>
+					<br>
+					<div>
+						<label for="texto">Qual sua expectativa com o FRONT-END?</label><br><br>
+						<textarea name="texto" id="texto" rows="5" cols="33" placeholder="Escreva aqui.."></textarea>
+					</div>
+					<br>
+					<div>
+						<input type="submit" value="Enviar" class="botao">
+						<input type="reset" value="Redefinir" class="botao">
+						<input type="button" onclick="alert('VOCÊ CLICOU! >.<')" value="Não clique" class="botao">
+					</div>
+					<p class="obrigatorio">*campo obrigatório</p>
+			</form>
+		</div>
+	</article>
+	<footer>
+		<p class="dev">Desenvolvido por Rafael Milanez</p>
+	</footer>
+</body>
+</html>

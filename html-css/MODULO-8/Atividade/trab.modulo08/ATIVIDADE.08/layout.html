@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML-Layout</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+              background-image: url(./images/teclado\ foto2.png);
+              background-size: 100%;
+			}
+			section {
+				background-color: rgba(97, 96, 96, 0.9);
+			}
+			/* Style the header */
+			header {
+			  background-color: rgba(97, 96, 96, 0.9);
+			  padding: 20px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			  padding: 20px;
+			  
+			}
+			a {
+              color: black;
+            }
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0 20px;
+			  color: white;
+			  font-size: larger;
+			  width: 180px;
+			}
+			li a {
+				display: block;
+				padding: 8px 16px;
+				text-decoration: none;
+			}
+			li a:hover {
+				background-color: rgba(0, 0, 0, 0.3);
+				color: white;
+			}
+			h1 {
+				font-size: 30px;
+				text-align: center;
+			}
+			footer h1 {
+				font-size: 30px;
+				color: black;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  height: 500px;
+			  
+			}
+			.foto {
+				float: right;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: rgba(97, 96, 96, 0.9);
+			  padding: 10px;
+			  height: 200px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+	</head>
+	<body>
+
+		<header>
+			<h2>H E A D E R</h2>
+		</header>
+
+		<section>
+
+			<nav>
+				<ul>
+					<h2>NAVEGAÇÃO</h2><br><br>
+					<li><a href="homepage.html">Home</a></li><br>
+					<li><a href="tabelas.html">Tabelas</a></li><br>
+					<li><a href="formulario.html">Formulário</a></li>
+				</ul>
+			</nav>
+
+			<article>
+
+				<h1>ARTICLE / CONTENT</h1>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id nibh posuere, eleifend lacus quis, blandit mauris. Proin eu gravida justo. Donec a mi laoreet, malesuada est a, imperdiet leo. Fusce in mauris dapibus, cursus purus vitae, pulvinar ligula. Donec nec mi mollis, viverra purus et, faucibus ante. Fusce faucibus pretium eros, vitae condimentum orci dapibus eu. Morbi elit nibh, pulvinar ut laoreet sit amet, dignissim id lectus. Nunc ac felis posuere, interdum eros vitae, sodales eros. Aenean porta vehicula diam, sit amet venenatis ante eleifend in. Integer malesuada urna nunc, dapibus dapibus felis malesuada et. Ut id tempor dolor, ac imperdiet lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus quam, mollis in tellus quis, blandit venenatis nunc.</p>
+				
+				<img src="./images/layoult2.png" alt="modelo layout" class="foto">
+
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam sit amet ullamcorper odio. Etiam dignissim arcu vel porta dictum. Proin vel maximus justo, quis rutrum lectus. Nullam pellentesque id enim quis imperdiet. Aenean condimentum ultricies ex vitae auctor. Proin condimentum congue felis, nec aliquet erat tempus ut. Phasellus quis molestie nulla, tincidunt finibus tortor. Aliquam nulla erat, tristique at pharetra eget, vestibulum a diam. Maecenas aliquet porta elit et pretium. In sed ante nibh. Nulla facilisi. Curabitur finibus gravida lacus, eu vestibulum ex. Morbi nec suscipit felis.</p>
+
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed tempore sequi debitis maiores eius alias quam ipsa porro, corporis illo. Sed explicabo dolore aut excepturi quam exercitationem neque natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur consequatur magnam tenetur ipsam. Corporis tempore explicabo porro ut aliquid tempora repudiandae tenetur! Veritatis ipsam laborum possimus fuga saepe illo animi.</p>
+				
+				
+			</article>
+
+
+		</section>
+
+		<footer>
+			<h1>F O O T E R</h1>
+			<p>Desenvolvido por Rafael Milanez</p>
+		</footer>
+		
+	</body>
+</html>
