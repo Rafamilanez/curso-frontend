@@ -28,8 +28,8 @@ Informação de alteração
 - após testado todo seu código (depois de estar finalizado e ok)
 - primeiro git add * (salvar várias alterações ou arquivos de uma vez)
 - git commit -m "mensagem"
-- git push (enviar alterações para o repositório)
-
+- git push (enviar alterações para o repositório GitHub)
+- gil pull (receber/trazer alterações do GitHub para minha máquina)
 
 
 ## GitFlow
